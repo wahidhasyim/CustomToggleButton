@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <com.jackandphantom.customtogglebutton.CustomToggle
+        android:id="@+id/toggle_custom1"
+        android:layout_width="250dp"
+        android:layout_height="90dp"
+        app:ctg_addLeftIcon="@drawable/ic_arrow_back_black_24dp"
+        app:ctg_addRightIcon="@drawable/ic_arrow_forward_black_24dp"
+        app:ctg_addSlideColor="#CF1313"
+        app:ctg_addSlideBackgroundColor="@color/colorPrimaryDark"
+        app:ctg_addAnimationType="extra_animation"/>
+
+    <com.jackandphantom.customtogglebutton.CustomToggle
+        android:id="@+id/toggle_custom2"
+        android:layout_width="250dp"
+        android:layout_height="90dp"
+        app:ctg_addLeftIcon="@drawable/ic_arrow_back_black_24dp"
+        app:ctg_addRightIcon="@drawable/ic_arrow_forward_black_24dp"
+        app:ctg_addSlideColor="#EC0D0D"
+        app:ctg_addSlideBackgroundColor="@color/colorPrimary"
+        android:layout_below="@id/toggle_custom1"
+        app:ctg_addAnimationType="phantom_animation"
+        android:layout_marginTop="10dp"/>
+
+    <com.jackandphantom.customtogglebutton.CustomToggle
+        android:id="@+id/toggle_custom3"
+        android:layout_width="250dp"
+        android:layout_height="90dp"
+        app:ctg_addLeftIcon="@drawable/ic_arrow_back_black_24dp"
+        app:ctg_addRightIcon="@drawable/ic_arrow_forward_black_24dp"
+        app:ctg_addSlideColor="#EA1010"
+        app:ctg_addSlideBackgroundColor="@color/colorPrimaryDark"
+        android:layout_below="@id/toggle_custom2"
+        app:ctg_addAnimationType="jack_animation"
+        android:layout_marginTop="10dp"/>
+
+</RelativeLayout>
